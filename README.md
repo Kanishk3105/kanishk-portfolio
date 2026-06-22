@@ -16,7 +16,7 @@ An immersive, interactive, and visually engaging portfolio built with React, Thr
 
 ## 🌟 Live Portfolio
 
-🔗 **Portfolio:** https://your-portfolio-link.com
+🔗 **Portfolio:** https://kanishk-portfolio-delta.vercel.app/
 
 🔗 **LinkedIn:** https://www.linkedin.com/in/kanishk-chhachra-654171276/
 
