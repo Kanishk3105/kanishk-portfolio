@@ -319,7 +319,7 @@ const SkillKeyboard = () => {
           />
         </Suspense>
       </div>
-      <span id="projects"></span>
+      {/* <span id="projects"></span> */}
     </section>
   );
 };

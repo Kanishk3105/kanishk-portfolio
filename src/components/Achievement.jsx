@@ -94,8 +94,8 @@ const Achievement = () => {
           ))}
         </VerticalTimeline>
       </div>
-      
-      <span id="skills"></span>
+
+      {/* <span id="skills"></span> */}
     </>
   );
 };

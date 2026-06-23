@@ -139,22 +139,18 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between max-w-8xl my-2 mx-4 relative">
         <a href="#hero" className="flex items-center gap-3 ml-6">
-  <img
-    src={logo}
-    alt="Kanishk"
-    className="h-16 w-16 object-contain"
-  />
+          <img src={logo} alt="Kanishk" className="h-16 w-16 object-contain" />
 
-  <div className="hidden sm:flex flex-col">
-    <span className="text-white font-semibold tracking-wide">
-      KANISHK
-    </span>
+          <div className="hidden sm:flex flex-col">
+            <span className="text-white font-semibold tracking-wide">
+              KANISHK
+            </span>
 
-    <span className="text-[14px] text-gray-400 uppercase tracking-[0.25em]">
-       AI/ML ENGINEER • FULL-STACK DEVELOPER
-    </span>
-  </div>
-</a>
+            <span className="text-[14px] text-gray-400 uppercase tracking-[0.25em]">
+              AI/ML ENGINEER • FULL-STACK DEVELOPER
+            </span>
+          </div>
+        </a>
         <button
           onClick={() => setIsActive((v) => !v)}
           className="flex items-center justify-center gap-3 m-0 p-0 h-6 bg-transparent text-base font-normal"
@@ -228,16 +224,17 @@ const Navbar = () => {
         variants={height}
         initial="initial"
         animate={isActive ? "enter" : "exit"}
-        className="w-full left-0 absolute"
-        style={{ zIndex: 20, background: "rgba(7,8,13,0.9)" }}
+        className="fixed inset-0 w-full h-screen"
+        style={{
+          zIndex: 9999,
+          background: "rgba(7,8,13,0.95)",
+          backdropFilter: "blur(12px)",
+        }}
       >
         <AnimatePresence>
           {isActive && (
-            <motion.div
-              className="flex flex-row justify-between items-center w-full max-w-8xl mx-auto relative min-h-[60vh]"
-              style={{ minHeight: 600 }}
-            >
-              <div className="flex flex-wrap items-start gap-1 w-2/3 pl-8">
+            <motion.div className="relative z-[10000] flex flex-row justify-between items-center w-full max-w-8xl mx-auto min-h-screen">
+              <div className="relative z-[10001] flex flex-wrap items-start gap-1 w-2/3 pl-8">
                 {NAV_LINKS.map((link, idx) => (
                   <a
                     key={link.title}
@@ -299,7 +296,7 @@ const Navbar = () => {
                   variants={opacity}
                   initial="initial"
                   animate={isHovering ? "open" : "closed"}
-                  className="hidden md:flex items-center justify-start w-1/3 h-full"
+                  className="relative z-[10001] hidden md:flex items-center justify-start w-1/3 h-full"
                   style={{ minHeight: 200 }}
                 >
                   <img
