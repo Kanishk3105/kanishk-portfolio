@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div style={parallaxStyle} className="relative z-50">
+        <div style={parallaxStyle} className="relative z-10">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Kanishk Chhachra</span>
           </h1>

@@ -224,12 +224,8 @@ const Navbar = () => {
         variants={height}
         initial="initial"
         animate={isActive ? "enter" : "exit"}
-        className="fixed inset-0 w-full h-screen"
-        style={{
-          zIndex: 9999,
-          background: "rgba(7,8,13,0.95)",
-          backdropFilter: "blur(12px)",
-        }}
+        onClick={() => setIsActive(false)}
+        className="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-md"
       >
         <AnimatePresence>
           {isActive && (

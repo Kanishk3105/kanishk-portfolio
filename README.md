@@ -91,6 +91,7 @@ Interactive skill showcase featuring:
 * TensorFlow
 * PyTorch
 * OpenCV
+* LLM
 * NLP
 * Computer Vision
 
@@ -337,7 +338,7 @@ I am actively seeking opportunities in:
 * Full-Stack Development
 * Software Engineering
 
-📧 Email: [Kanishkchhachra@gmail.com](mailto:Kanishkchhachra@gmail.com)
+📧 Email: [Kanishkchhachra@gmail.com]
 
 🔗 LinkedIn: https://www.linkedin.com/in/kanishk-chhachra-654171276/
 
